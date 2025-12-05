@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Submit Complaint{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="page-header">
+    <h1>Submit a Complaint</h1>
+    <p>Report issues in your constituency</p>
+  </div>
+
+  {% if success %}
+  <div class="alert alert-success">
+    <h3>✅ Complaint Submitted Successfully!</h3>
+    <p>Your Complaint ID: <strong>{{ complaint_id }}</strong></p>
+    <a href="{{ url_for('status') }}" class="btn-primary">Check Status</a>
+  </div>
+  {% endif %}
+
+  {% if error %}
+  <div class="alert alert-error">{{ error }}</div>
+  {% endif %}
+
+  {% if not success %}
+  <form action="{{ url_for('complaint') }}" method="POST" class="complaint-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="pincode">Pincode *</label>
+        <input type="text" id="pincode" name="pincode" maxlength="6" pattern="[0-9]{6}" required
+               class="form-control" value="{{ pincode or '' }}">
+      </div>
+      <div class="form-group">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required class="form-control" value="{{ name or '' }}">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required class="form-control" value="{{ email or '' }}">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" class="form-control" value="{{ phone or '' }}">
+      </div>
+    </div>
+
+    {% if choose_vs and vs_options %}
+    <div class="form-group">
+      <label for="vs_id">Select Assembly Constituency *</label>
+      <select id="vs_id" name="vs_id" class="form-control" required>
+        {% for opt in vs_options %}
+          <option value="{{ opt.vs_id }}">{{ opt.vs_name }} — {{ opt.locality }} ({{ opt.lok_sabha_constituency }})</option>
+        {% endfor %}
+      </select>
+    </div>
+    {% endif %}
+
+    <div class="form-group">
+      <label for="category">Category *</label>
+      <select id="category" name="category" required class="form-control">
+        <option value="Infrastructure" {% if category=='Infrastructure' %}selected{% endif %}>Infrastructure</option>
+        <option value="Education" {% if category=='Education' %}selected{% endif %}>Education</option>
+        <option value="Healthcare" {% if category=='Healthcare' %}selected{% endif %}>Healthcare</option>
+        <option value="Traffic" {% if category=='Traffic' %}selected{% endif %}>Traffic</option>
+        <option value="Water Supply" {% if category=='Water Supply' %}selected{% endif %}>Water Supply</option>
+        <option value="Sanitation" {% if category=='Sanitation' %}selected{% endif %}>Sanitation</option>
+        <option value="Other" {% if category=='Other' %}selected{% endif %}>Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description *</label>
+      <textarea id="description" name="description" rows="6" required class="form-control">{{ description or '' }}</textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">{{ 'Continue' if choose_vs else 'Submit Complaint' }}</button>
+  </form>
+  {% endif %}
+</div>
+{% endblock %}

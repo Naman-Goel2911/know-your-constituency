@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Check Complaint Status{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Check Complaint Status</h1>
+        <p>Enter your complaint ID to view status</p>
+    </div>
+
+    <div class="search-section">
+        <form action="{{ url_for('status') }}" method="POST" class="search-form">
+            <div class="form-group">
+                <label for="complaint_id">Complaint ID</label>
+                <input type="text" id="complaint_id" name="complaint_id" 
+                       placeholder="Enter complaint ID" required class="form-control">
+            </div>
+            <button type="submit" class="btn-primary">Check Status</button>
+        </form>
+    </div>
+
+    {% if error %}
+    <div class="alert alert-error">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    {% if complaint %}
+    <div class="results-section">
+        <div class="result-card">
+            <h2>Complaint Details</h2>
+            
+            <div class="status-badge status-{{ complaint.complaint_status.lower() }}">
+                {{ complaint.complaint_status }}
+            </div>
+
+            <div class="info-row">
+                <span class="label">Complaint ID:</span>
+                <span class="value">{{ complaint.complaint_id }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Category:</span>
+                <span class="value">{{ complaint.complaint_category }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Submitted:</span>
+                <span class="value">{{ complaint.submitted_date }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Pincode:</span>
+                <span class="value">{{ complaint.pincode }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Name:</span>
+                <span class="value">{{ complaint.complainant_name }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Email:</span>
+                <span class="value">{{ complaint.complainant_email }}</span>
+            </div>
+            
+            <div class="description-box">
+                <strong>Description:</strong>
+                <p>{{ complaint.complaint_description }}</p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="hero-section">
+        <h1 class="hero-title">Know Your Representatives</h1>
+        <p class="hero-subtitle">Search for your MLA and MP by pincode. Submit complaints and track their status.</p>
+        
+        <div class="quick-search">
+            <form action="{{ url_for('search') }}" method="POST" class="search-form-hero">
+                <input type="text" name="pincode" placeholder="Enter your 6-digit pincode" 
+                       maxlength="6" pattern="[0-9]{6}" required class="search-input-hero">
+                <button type="submit" class="btn-primary-hero">Search Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Search Constituency</h3>
+            <p>Find your Lok Sabha and Vidhan Sabha constituency by pincode</p>
+            <a href="{{ url_for('search') }}" class="btn-secondary">Search</a>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>Your Representatives</h3>
+            <p>View contact details of your MP and MLA</p>
+            <a href="{{ url_for('search') }}" class="btn-secondary">View Details</a>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>Submit Complaint</h3>
+            <p>Report issues in your constituency</p>
+            <a href="{{ url_for('complaint') }}" class="btn-secondary">Submit</a>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Track Status</h3>
+            <p>Check your complaint status anytime</p>
+            <a href="{{ url_for('status') }}" class="btn-secondary">Check Status</a>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <h2>About This System</h2>
+        <div class="info-grid">
+            <div class="info-item">
+                <strong>70</strong>
+                <span>Vidhan Sabha Constituencies</span>
+            </div>
+            <div class="info-item">
+                <strong>7</strong>
+                <span>Lok Sabha Constituencies</span>
+            </div>
+            <div class="info-item">
+                <strong>100+</strong>
+                <span>Pincodes Covered</span>
+            </div>
+            <div class="info-item">
+                <strong>Real-time</strong>
+                <span>Data Updates</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

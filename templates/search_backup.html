@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Search Constituency{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Search Constituency</h1>
+        <p>Enter your pincode to find your representatives</p>
+    </div>
+
+    <div class="search-section">
+        <form action="{{ url_for('search') }}" method="POST" class="search-form">
+            <div class="form-group">
+                <label for="pincode">Enter Pincode</label>
+                <input type="text" id="pincode" name="pincode" placeholder="110001" 
+                       maxlength="6" pattern="[0-9]{6}" required class="form-control">
+            </div>
+            <button type="submit" class="btn-primary">Search</button>
+        </form>
+    </div>
+
+    {% if error %}
+    <div class="alert alert-error">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    {% if pincode %}
+    <div class="results-section">
+        <div class="result-card">
+            <h2>📍 Location Information</h2>
+            <div class="info-row">
+                <span class="label">Pincode:</span>
+                <span class="value">{{ pincode }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Locality:</span>
+                <span class="value">{{ locality }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Vidhan Sabha:</span>
+                <span class="value">{{ vs_name }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Lok Sabha:</span>
+                <span class="value">{{ ls_name }}</span>
+            </div>
+        </div>
+
+        {% if mla %}
+        <div class="result-card representative-card">
+            <h2>🏛️ Member of Legislative Assembly (MLA)</h2>
+            <div class="rep-header">
+                <div>
+                    <h3>{{ mla.mla_name }}</h3>
+                    <p class="party-badge">{{ mla.party }}</p>
+                </div>
+            </div>
+            <div class="rep-details">
+                <div class="info-row">
+                    <span class="label">📞 Phone:</span>
+                    <span class="value">{{ mla.phone }}</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">📧 Email:</span>
+                    <span class="value">{{ mla.email }}</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">🏢 Office:</span>
+                    <span class="value">{{ mla.office_address }}</span>
+                </div>
+                {% if mla.education %}
+                <div class="info-row">
+                    <span class="label">🎓 Education:</span>
+                    <span class="value">{{ mla.education }}</span>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if mp %}
+        <div class="result-card representative-card">
+            <h2>🏛️ Member of Parliament (MP)</h2>
+            <div class="rep-header">
+                <div>
+                    <h3>{{ mp.mp_name }}</h3>
+                    <p class="party-badge">{{ mp.party }}</p>
+                </div>
+            </div>
+            <div class="rep-details">
+                <div class="info-row">
+                    <span class="label">📞 Phone:</span>
+                    <span class="value">{{ mp.phone }}</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">📧 Email:</span>
+                    <span class="value">{{ mp.email }}</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">🏢 Office:</span>
+                    <span class="value">{{ mp.office_address }}</span>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

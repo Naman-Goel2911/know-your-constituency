@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Delhi NCR Statistics</h1>
+        <p>Overview of constituencies and complaints</p>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon">🏛️</div>
+            <div class="stat-number">{{ stats.total_lok_sabha }}</div>
+            <div class="stat-label">Lok Sabha Constituencies</div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">🏢</div>
+            <div class="stat-number">{{ stats.total_vidhan_sabha }}</div>
+            <div class="stat-label">Vidhan Sabha Constituencies</div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">📍</div>
+            <div class="stat-number">{{ stats.total_pincodes }}</div>
+            <div class="stat-label">Pincodes Covered</div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">📝</div>
+            <div class="stat-number">{{ stats.total_complaints }}</div>
+            <div class="stat-label">Total Complaints</div>
+        </div>
+    </div>
+
+    <div class="results-section">
+        <div class="result-card">
+            <h2>Complaint Summary</h2>
+            <div class="info-row">
+                <span class="label">New Complaints:</span>
+                <span class="value">{{ stats.new_complaints }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">In Progress:</span>
+                <span class="value">{{ stats.in_progress }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Resolved:</span>
+                <span class="value">{{ stats.resolved_complaints }}</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Resolution Rate:</span>
+                <span class="value">{{ "%.1f"|format(stats.resolution_rate) }}%</span>
+            </div>
+        </div>
+
+        {% if categories %}
+        <div class="result-card">
+            <h2>Complaints by Category</h2>
+            {% for category, count in categories.items() %}
+            <div class="info-row">
+                <span class="label">{{ category }}:</span>
+                <span class="value">{{ count }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
