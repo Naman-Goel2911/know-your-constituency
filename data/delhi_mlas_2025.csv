@@ -1,0 +1,71 @@
+vs_id,vs_name,mla_name,party,phone,email,office_address,education,assets_crores
+1,Narela,Raj Karan Khatri,BJP,011-23392001,narela.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,N/A
+2,Burari,Sanjeev Jha,AAP,011-23392002,burari.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,N/A
+3,Timarpur,Dilip Pandey,AAP,011-23392003,timarpur.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,N/A
+4,Adarsh Nagar,Raj Kumar Bhatia,BJP,011-23392004,adarshnagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,16
+5,Badli,Aahir Deepak Chaudharyy,BJP,011-23392005,badli.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate Professional,1
+6,Rithala,Kulwant Rana,BJP,011-23392006,rithala.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,N/A
+7,Bawana,Ravinder Indraj Singh,BJP,011-23392007,bawana.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,7
+8,Mundka,Gajender Drall,BJP,011-23392008,mundka.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,12
+9,Kirari,Anil Jha,AAP,011-23392009,kirari.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,4
+10,Sultan Pur Majra,Mukesh Kumar Ahlawat,AAP,011-23392010,sultanpurmajra.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,11
+11,Nangloi Jat,Manoj Kumar Shokeen,BJP,011-23392011,nangloijat.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,13
+12,Mangol Puri,Raj Kumar Chauhan,BJP,011-23392012,mangolpuri.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,11
+13,Rohini,Vijender Gupta,BJP,011-23392013,rohini.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,16
+14,Shalimar Bagh,Rekha Gupta,BJP,011-23392014,shalimarbagh.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate Professional,N/A
+15,Shakur Basti,Karnail Singh,BJP,011-23392015,shakurbasti.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",10th Pass,259
+16,Tri Nagar,Tilak Ram Gupta,BJP,011-23392016,trinagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",10th Pass,2
+17,Wazirpur,Poonam Sharma,BJP,011-23392017,wazirpur.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,1
+18,Model Town,Akhilesh Pati Tripathi,AAP,011-23392018,modeltown.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,N/A
+19,Sadar Bazar,Som Dutt,AAP,011-23392019,sadarbazar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,N/A
+20,Chandni Chowk,Punardeep Singh Sawney,AAP,011-23392020,chandnichowk.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,21
+21,Matia Mahal,Aaley Mohammed Iqbal,AAP,011-23392021,matiamahal.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,N/A
+22,Ballimaran,Imran Hussain,AAP,011-23392022,ballimaran.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate Professional,N/A
+23,Karol Bagh,Vishesh Ravi,AAP,011-23392023,karolbagh.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,N/A
+24,Patel Nagar,Pravesh Ratn,AAP,011-23392024,patelnagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,1
+25,Moti Nagar,Harish Khurana,BJP,011-23392025,motinagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,2
+26,Madipur,Kailash Gangwal,BJP,011-23392026,madipur.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,N/A
+27,Rajouri Garden,Manjinder Singh Sirsa,BJP,011-23392027,rajourigarden.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,248
+28,Hari Nagar,Shyam Sharma,BJP,011-23392028,harinagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",10th Pass,16
+29,Tilak Nagar,Jarnail Singh,AAP,011-23392029,tilaknagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,4
+30,Janakpuri,Ashish Sood,BJP,011-23392030,janakpuri.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,9
+31,Vikaspuri,Pankaj Kumar Singh,BJP,011-23392031,vikaspuri.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate Professional,4
+32,Uttam Nagar,Pawan Sharma,BJP,011-23392032,uttamnagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,6
+33,Dwarka,Parduymn Singh Rajput,BJP,011-23392033,dwarka.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,42
+34,Matiala,Sandeep Sehrawat,BJP,011-23392034,matiala.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate Professional,1
+35,Najafgarh,Neelam Pahalwan,BJP,011-23392035,najafgarh.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,12
+36,Bijwasan,Kailash Gahlot,BJP,011-23392036,bijwasan.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,59
+37,Palam,Bansuri Swaraj,BJP,011-23392037,palam.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,N/A
+38,Delhi Cantonment,Virender Singh Kadian,AAP,011-23392038,delhicantt.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,N/A
+39,Rajinder Nagar,Umang Bajaj,BJP,011-23392039,rajindernagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,10
+40,New Delhi,Parvesh Sahib Singh,BJP,011-23392040,newdelhi.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,115
+41,Jangpura,Tarvinder Singh Marwah,BJP,011-23392041,jangpura.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,N/A
+42,Kasturba Nagar,Neeraj Basoya,BJP,011-23392042,kasturbanak.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate Professional,7
+43,Malviya Nagar,Satish Upadhyay,BJP,011-23392043,malviyanagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,13
+44,R K Puram,Anil Kumar Sharma,BJP,011-23392044,rkpuram.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,N/A
+45,Mehrauli,Gajender Singh Yadav,BJP,011-23392045,mehrauli.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,30
+46,Chhatarpur,Kartar Singh Tanwar,BJP,011-23392046,chhatarpur.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Others,25
+47,Deoli,Prem Chauhan,AAP,011-23392047,deoli.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,0
+48,Ambedkar Nagar,Dr. Ajay Dutt,AAP,011-23392048,ambedkarnagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Doctorate,11
+49,Sangam Vihar,Chandan Kumar Choudhary,BJP,011-23392049,sangamvihar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,3
+50,Greater Kailash,Shikha Rai,AAP,011-23392050,greaterkailash.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,N/A
+51,Kalkaji,Atishi,AAP,011-23392051,kalkaji.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,0
+52,Tughlakabad,Sahi Ram,AAP,011-23392052,tughlakabad.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",10th Pass,N/A
+53,Badarpur,Ram Singh Netaji,AAP,011-23392053,badarpur.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",5th Pass,89
+54,Okhla,Amanatullah Khan,AAP,011-23392054,okhla.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,1
+55,Trilokpuri,Ravi Kant,BJP,011-23392055,trilokpuri.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,0
+56,Kondli,Sulekh Kumar Bharti,AAP,011-23392056,kondli.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,N/A
+57,Patparganj,Ravinder Singh Negi,BJP,011-23392057,patparganj.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,1
+58,Laxmi Nagar,Abhay Kumar Verma,BJP,011-23392058,laxminagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate Professional,1
+59,Vishwas Nagar,Om Prakash Sharma,BJP,011-23392059,vishwasnagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,N/A
+60,Krishna Nagar,Dr Anil Goyal,BJP,011-23392060,krishnanagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,78
+61,Gandhi Nagar,Arvinder Singh Lovely,BJP,011-23392061,gandhinagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,N/A
+62,Shahdara,Sanjay Goyal,BJP,011-23392062,shahdara.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate Professional,54
+63,Seemapuri,Veer Singh Dhingan,AAP,011-23392063,seemapuri.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",10th Pass,N/A
+64,Rohtas Nagar,Jitender Mahajan,BJP,011-23392064,rohtasnagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,2
+65,Seelampur,Chaudhary Zubair Ahmad,AAP,011-23392065,seelampur.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Graduate,3
+66,Ghonda,Ajay Mahawar,BJP,011-23392066,ghonda.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,7
+67,Babarpur,Gopal Rai,AAP,011-23392067,babarpur.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,N/A
+68,Gokalpur,Surendra Kumar,AAP,011-23392068,gokalpur.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Others,4
+69,Mustafabad,Mohan Singh Bisht,BJP,011-23392069,mustafabad.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",12th Pass,N/A
+70,Karawal Nagar,Kapil Mishra,BJP,011-23392070,karawalnagar.mla@delhi.gov.in,"Delhi Vidhan Sabha, Old Secretariat, Delhi 110054",Post Graduate,1
